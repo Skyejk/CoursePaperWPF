@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelComplexWPF.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,20 @@ namespace HotelComplexWPF
         public MainWindow()
         {
             InitializeComponent();
+            mainFrame.NavigationService.Navigate(new AuthPage());
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.GoBack();
+        }
+
+        private void mainFrame_ContentRendered(object sender, EventArgs e)//Сокрытие кнопки возвращения на главном экране.
+        {
+            if (mainFrame.CanGoBack)
+                btnCancel.Visibility = Visibility.Visible;
+            else
+                btnCancel.Visibility = Visibility.Hidden;
         }
     }
 }
