@@ -1,0 +1,33 @@
+﻿<Page x:Class="HotelComplexWPF.Pages.AuthPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HotelComplexWPF.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AuthPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBox x:Name="tbxUserName" Style="{StaticResource placeHolder}" Tag="Введите логин"/>
+            <TextBox x:Name="tbxUserPassword" Style="{StaticResource placeHolder}" Tag="Введите пароль"/>
+            <TextBox x:Name="tbxCaptcha" Style="{StaticResource placeHolder}" Tag="Введите капчу"/>
+            <TextBlock x:Name="tblCaptcha" Text="Capcha" HorizontalAlignment="Center"/>
+
+            <Button x:Name="btnEnter" Content="Войти" Click="btnEnter_Click"/>
+        </StackPanel>
+        
+    </Grid>
+</Page>
