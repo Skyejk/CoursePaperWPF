@@ -13,10 +13,11 @@
             <Setter Property="BorderBrush" Value="#697278"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="FontFamily" Value="Comic Sans MS"/>
             <Setter Property="Margin" Value="10"/>
             <Setter Property="Width" Value="150"/>
-            <Setter Property="Height" Value="30"/>
+            <Setter Property="Height" Value="35"/>
             <Setter Property="Template"><!--Меняет цвет кнопки при наведении на нее мышью-->
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
@@ -49,8 +50,9 @@
             <Setter Property="Width" Value="150"/>
             <Setter Property="Height" Value="30"/>
         </Style>
-
-        <Style x:Key="placeHolder" TargetType="{x:Type TextBox}" BasedOn="{StaticResource {x:Type TextBox}}">
+        <!--Placeholder работает криво, надпись иногда выделяется-->
+        
+        <!--<Style x:Key="placeHolder" TargetType="{x:Type TextBox}" BasedOn="{StaticResource {x:Type TextBox}}">
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type TextBox}">
@@ -78,8 +80,7 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-        </Style>
-
+        </Style>-->
         <Style TargetType="TextBlock">
             <Setter Property="Foreground" Value="#f0f2f3"/>
             <Setter Property="FontSize" Value="14"/>
