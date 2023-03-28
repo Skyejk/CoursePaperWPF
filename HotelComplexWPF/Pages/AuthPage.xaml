@@ -21,9 +21,9 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBox x:Name="tbxUserName" Style="{StaticResource placeHolder}" Tag="Введите логин"/>
-            <TextBox x:Name="tbxUserPassword" Style="{StaticResource placeHolder}" Tag="Введите пароль"/>
-            <TextBox x:Name="tbxCaptcha" Style="{StaticResource placeHolder}" Tag="Введите капчу"/>
+            <TextBox x:Name="tbxUserName"       />
+            <TextBox x:Name="tbxUserPassword"   />
+            <TextBox x:Name="tbxCaptcha"        />
             <TextBlock x:Name="tblCaptcha" Text="Capcha" HorizontalAlignment="Center"/>
 
             <Button x:Name="btnEnter" Content="Войти" Click="btnEnter_Click"/>
