@@ -21,10 +21,12 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="tblUserName" Text="Username" HorizontalAlignment="Center"/>
             <TextBox x:Name="tbxUserName"       />
-            <TextBox x:Name="tbxUserPassword"   />
-            <TextBox x:Name="tbxCaptcha"        />
+            <TextBlock x:Name="tblUserPassword" Text="Password" HorizontalAlignment="Center"/>
+            <PasswordBox x:Name="tbxUserPassword" />
             <TextBlock x:Name="tblCaptcha" Text="Capcha" HorizontalAlignment="Center"/>
+            <TextBox x:Name="tbxCaptcha"        />
 
             <Button x:Name="btnEnter" Content="Войти" Click="btnEnter_Click"/>
         </StackPanel>
