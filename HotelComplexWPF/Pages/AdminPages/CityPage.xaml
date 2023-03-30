@@ -14,7 +14,7 @@
                 <DataGridTextColumn Header="Город" Binding="{Binding CityName}" Width="*"/>
                 <DataGridTextColumn Header="Флаг" Binding="{Binding FlagCity}" Width="*"/>
                 <DataGridTextColumn Header="Регион" Binding="{Binding Region.RegionName}" Width="*"/>
-                <DataGridTemplateColumn Width="Auto">
+                <DataGridTemplateColumn Header="Кнопки" Width="Auto">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <Button x:Name="btnEdit" Content="Редактировать" Click="btnEdit_Click"/>
