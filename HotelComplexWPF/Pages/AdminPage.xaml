@@ -5,10 +5,51 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:HotelComplexWPF.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="720" d:DesignWidth="1280"
       Title="AdminPage">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="tblFIO" Text="Фамилия Имя О." Grid.Column="15" Grid.ColumnSpan="3" VerticalAlignment="Center" TextAlignment="Center"/>
+        <Button x:Name="btnAddCountry"      Grid.Row="2" Grid.ColumnSpan="4" Content="Добавить страну" Click="btnAddCountry_Click"/>
+        <Button x:Name="btnAddRegion"       Grid.Row="3" Grid.ColumnSpan="4" Content="Добавить регион" Click="btnAddRegion_Click"/>
+        <Button x:Name="btnAddCity"         Grid.Row="4" Grid.ColumnSpan="4" Content="Добавить город" Click="btnAddCity_Click"/>
+        <Button x:Name="btnAddHotel"        Grid.Row="5" Grid.ColumnSpan="4" Content="Добавить отель" Click="btnAddHotel_Click"/>
+        <Button x:Name="btnAddHotelRoom"    Grid.Row="6" Grid.ColumnSpan="4" Content="Добавить комнату" Click="btnAddHotelRoom_Click"/>
+        <Button x:Name="btnAddEmployee"     Grid.Row="7" Grid.ColumnSpan="4" Content="Добавить сотрудника" Click="btnAddEmployee_Click"/>
+
+        <Frame x:Name="frmFocus" NavigationUIVisibility="Hidden" Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="13" Grid.RowSpan="7"/>
+
     </Grid>
 </Page>

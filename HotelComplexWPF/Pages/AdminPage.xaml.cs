@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HotelComplexWPF.Entities;
+using HotelComplexWPF.Pages.AdminPages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,39 @@ namespace HotelComplexWPF.Pages
     /// </summary>
     public partial class AdminPage : Page
     {
-        public AdminPage()
+        User user = new User();
+        public AdminPage(User currentUser)
         {
             InitializeComponent();
+        }
+        private void btnAddCountry_Click(object sender, RoutedEventArgs e)
+        {
+            frmFocus.NavigationService.Navigate(new CountryPage());
+        }
+
+        private void btnAddRegion_Click(object sender, RoutedEventArgs e)
+        {
+            frmFocus.NavigationService.Navigate(new RegionPage());
+        }
+
+        private void btnAddCity_Click(object sender, RoutedEventArgs e)
+        {
+            frmFocus.NavigationService.Navigate(new CityPage());
+        }
+
+        private void btnAddHotel_Click(object sender, RoutedEventArgs e)
+        {
+            frmFocus.NavigationService.Navigate(new HotelPage());
+        }
+
+        private void btnAddHotelRoom_Click(object sender, RoutedEventArgs e)
+        {
+            frmFocus.NavigationService.Navigate(new HRoomPage());
+        }
+
+        private void btnAddEmployee_Click(object sender, RoutedEventArgs e)
+        {
+            frmFocus.NavigationService.Navigate(new EmployeePage());
         }
     }
 }

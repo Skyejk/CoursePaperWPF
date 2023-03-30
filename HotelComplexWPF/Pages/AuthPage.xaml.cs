@@ -1,4 +1,5 @@
 ﻿using HotelComplexWPF.Entities;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,7 +47,8 @@ namespace HotelComplexWPF.Pages
                     if (countUnsuccessfully < 1) {
                         if (userCount > 0) {
                             Successfully(user.Employee.EmployeePosition.Post.ToString());
-                            //выполнить вход
+                            //вход
+                            LoadF(user.Employee.EmployeePosition.Post.ToString(), user);
                         }
                         else {
                             NotF("Проверьте введённые данные");
@@ -58,7 +60,8 @@ namespace HotelComplexWPF.Pages
 
                         if (userCount > 0 && tblCaptcha.Text == tbxCaptcha.Text) {
                             Successfully(user.Employee.EmployeePosition.Post.ToString());
-                            //выполнить вход
+                            //вход
+                            LoadF(user.Employee.EmployeePosition.Post.ToString(), user);
                         }
                         else {
                             NotF("Введите Captcha.");
@@ -106,6 +109,27 @@ namespace HotelComplexWPF.Pages
         }
         void NotF(string text) {
             MessageBox.Show(text, null, MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.OK, MessageBoxOptions.None);
+        }
+
+        void LoadF(string _role, User user)
+        {
+            switch (_role)
+            {
+                case "Administrator":
+                    NavigationService.Navigate(new AdminPage(user));
+                    break;
+                //case "Registrar":
+                //    NavigationService.Navigate(new RegistrarPage(user));
+                //    break;
+            }
+            tbxUserName.Text = "";
+            tbxUserPassword.Password = "";
+            tbxCaptcha.Text = "";
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }
