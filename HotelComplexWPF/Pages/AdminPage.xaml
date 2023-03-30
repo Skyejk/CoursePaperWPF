@@ -51,5 +51,12 @@
 
         <Frame x:Name="frmFocus" NavigationUIVisibility="Hidden" Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="13" Grid.RowSpan="7"/>
 
+        <TextBlock 
+            Grid.Column="5" Grid.Row="4" 
+            Grid.ColumnSpan="8" Grid.RowSpan="2"
+            Text="Панель администратора"
+            VerticalAlignment="Center" HorizontalAlignment="Center"
+            FontSize="45" Panel.ZIndex="-4"
+            />
     </Grid>
 </Page>
