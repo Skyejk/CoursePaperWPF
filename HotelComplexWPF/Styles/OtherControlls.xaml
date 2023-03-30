@@ -1,0 +1,124 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="Button">
+        <Setter Property="Background" Value="#293238"/>
+        <Setter Property="Foreground" Value="#f0f2f3"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="BorderBrush" Value="#697278"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="Comic Sans MS"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="Width" Value="150"/>
+        <Setter Property="Height" Value="35"/>
+        <Setter Property="Template">
+            <!--Меняет цвет кнопки при наведении на нее мышью-->
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#697278"/>
+            </Trigger>
+        </Style.Triggers>
+        <!--End-->
+    </Style>
+
+    <Style TargetType="TextBox">
+        <Setter Property="Background" Value="#293238"/>
+        <Setter Property="Foreground" Value="#f0f2f3"/>
+
+        <Setter Property="BorderBrush" Value="#697278"/>
+        <Setter Property="BorderThickness" Value="1"/>
+
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="TextAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="Comic Sans MS"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="Width" Value="150"/>
+        <Setter Property="Height" Value="30"/>
+    </Style>
+    <Style TargetType="PasswordBox">
+        <Setter Property="Background" Value="#293238"/>
+        <Setter Property="Foreground" Value="#f0f2f3"/>
+
+        <Setter Property="BorderBrush" Value="#697278"/>
+        <Setter Property="BorderThickness" Value="1"/>
+
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="Comic Sans MS"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="Width" Value="150"/>
+        <Setter Property="Height" Value="30"/>
+    </Style>
+    <!--Placeholder работает криво, надпись иногда выделяется-->
+
+    <!--<Style x:Key="placeHolder" TargetType="{x:Type TextBox}" BasedOn="{StaticResource {x:Type TextBox}}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Grid>
+                            <TextBox Text="{Binding Path=Text,
+                                                RelativeSource={RelativeSource TemplatedParent}, 
+                                                Mode=TwoWay,
+                                                UpdateSourceTrigger=PropertyChanged}"
+                                 x:Name="textSource" 
+                                 Background="Transparent" 
+                                 Panel.ZIndex="2" />
+                            <TextBox Text="{TemplateBinding Tag}" Background="{TemplateBinding Background}" Panel.ZIndex="1">
+                                <TextBox.Style>
+                                    <Style TargetType="{x:Type TextBox}">
+                                        <Setter Property="Foreground" Value="Transparent"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Path=Text, Source={x:Reference textSource}}" Value="">
+                                                <Setter Property="Foreground" Value="LightGray"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBox.Style>
+                            </TextBox>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>-->
+    <Style TargetType="TextBlock">
+        <Setter Property="Foreground" Value="#f0f2f3"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontFamily" Value="Comic Sans MS"/>
+    </Style>
+
+    <Style TargetType="Window">
+        <Setter Property="Background" Value="#38444c"/>
+        <Setter Property="Foreground" Value="#f0f2f3"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="FontFamily" Value="Comic Sans MS"/>
+
+        <Setter Property="BorderBrush" Value="#ec1a62"/>
+
+
+        <Setter Property="BorderBrush" Value="#697278"/>
+
+    </Style>
+
+    <Style TargetType="Grid">
+        <Setter Property="Background" Value="#38444c"/>
+    </Style>
+    <Style TargetType="Image">
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+    </Style>
+</ResourceDictionary>
