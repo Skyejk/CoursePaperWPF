@@ -9,6 +9,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Styles/ComboBox.xaml"/>
                 <ResourceDictionary Source="Styles/OtherControlls.xaml"/>
+                <ResourceDictionary Source="Styles/DataGrid.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
         
