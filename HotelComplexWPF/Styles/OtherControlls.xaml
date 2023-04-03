@@ -121,4 +121,14 @@
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
     </Style>
+    <Style TargetType="ToolTip">
+        <Setter Property="Background" Value="#697278"/>
+        <Setter Property="Foreground" Value="#f0f2f3"/>
+        <Setter Property="Placement" Value="Relative"/>
+        <Setter Property="HasDropShadow" Value="False"/>
+        <Setter Property="Placement" Value="Relative"/>
+        <Setter Property="HorizontalOffset" Value="15"/>
+        <Setter Property="VerticalOffset" Value="10"/>
+        <Setter Property="Opacity" Value="0.7"/>
+    </Style>
 </ResourceDictionary>
