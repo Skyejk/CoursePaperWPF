@@ -118,9 +118,9 @@ namespace HotelComplexWPF.Pages
                 case "Administrator":
                     NavigationService.Navigate(new AdminPage(user));
                     break;
-                //case "Registrar":
-                //    NavigationService.Navigate(new RegistrarPage(user));
-                //    break;
+                case "Registrar":
+                    NavigationService.Navigate(new RegistrarPage(user));
+                    break;
             }
             tbxUserName.Text = "";
             tbxUserPassword.Password = "";
