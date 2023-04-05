@@ -15,9 +15,15 @@ namespace HotelComplexWPF.Entities
     
     public partial class HotelEntities : DbContext
     {
+        private static HotelEntities context;
         public HotelEntities()
             : base("name=HotelEntities")
         {
+        }
+        public static HotelEntities GetContext() { 
+            if(context == null)
+                context = new HotelEntities();
+            return context;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

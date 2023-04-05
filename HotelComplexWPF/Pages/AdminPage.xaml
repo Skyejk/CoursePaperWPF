@@ -1,0 +1,45 @@
+﻿<Page x:Class="HotelComplexWPF.Pages.AdminPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HotelComplexWPF.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="AdminPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/> 
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="400"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="tblFIO" Text="Фамилия Имя О." Grid.Column="2" Grid.Row="0" VerticalAlignment="Bottom" TextAlignment="Center" Margin="10"/>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button x:Name="btnAddCountry"   Content="Добавить страну" Click="btnAddCountry_Click"/>
+            <Button x:Name="btnAddRegion"    Content="Добавить регион" Click="btnAddRegion_Click"/>
+            <Button x:Name="btnAddCity"      Content="Добавить город" Click="btnAddCity_Click"/>
+            <Button x:Name="btnAddHotel"     Content="Добавить отель" Click="btnAddHotel_Click"/>
+            <Button x:Name="btnAddHotelRoom" Content="Добавить комнату" Click="btnAddHotelRoom_Click"/>
+            <Button x:Name="btnAddEmployee"  Content="Добавить сотрудника" Click="btnAddEmployee_Click"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <ScrollViewer Height="500" Width="auto">
+                <Frame x:Name="frmFocus" Grid.Column="1" NavigationUIVisibility="Hidden" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch"/>
+            </ScrollViewer>
+        </StackPanel>
+        <TextBlock
+            Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2"
+            Text="Администратор"
+            VerticalAlignment="Center" HorizontalAlignment="Center"
+            FontSize="45" Panel.ZIndex="-4"
+            />
+    </Grid>
+</Page>

@@ -68,7 +68,51 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Pages\AdminPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminPages\AddEditPages\AddEditCityPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminPages\CityPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminPages\CountryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminPages\EmployeePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminPages\HotelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminPages\HRoomPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminPages\RegionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AuthPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\DataGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\OtherControlls.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -149,6 +193,30 @@
     <Compile Include="Entities\User.cs">
       <DependentUpon>HotelModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AdminPage.xaml.cs">
+      <DependentUpon>AdminPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\AddEditPages\AddEditCityPage.xaml.cs">
+      <DependentUpon>AddEditCityPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\CityPage.xaml.cs">
+      <DependentUpon>CityPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\CountryPage.xaml.cs">
+      <DependentUpon>CountryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\EmployeePage.xaml.cs">
+      <DependentUpon>EmployeePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\HotelPage.xaml.cs">
+      <DependentUpon>HotelPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\HRoomPage.xaml.cs">
+      <DependentUpon>HRoomPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\RegionPage.xaml.cs">
+      <DependentUpon>RegionPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AuthPage.xaml.cs">
       <DependentUpon>AuthPage.xaml</DependentUpon>
     </Compile>
@@ -209,6 +277,7 @@
       <DependentUpon>HotelModel.edmx</DependentUpon>
       <LastGenOutput>HotelModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\pngQuestion.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
