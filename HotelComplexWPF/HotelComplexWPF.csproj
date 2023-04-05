@@ -72,6 +72,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\AdminPages\AddEditPages\AddEditCityPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AdminPages\CityPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -101,6 +105,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Styles\ComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\DataGrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -188,6 +196,9 @@
     <Compile Include="Pages\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AdminPages\AddEditPages\AddEditCityPage.xaml.cs">
+      <DependentUpon>AddEditCityPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AdminPages\CityPage.xaml.cs">
       <DependentUpon>CityPage.xaml</DependentUpon>
     </Compile>
@@ -266,6 +277,7 @@
       <DependentUpon>HotelModel.edmx</DependentUpon>
       <LastGenOutput>HotelModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\pngQuestion.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
