@@ -26,6 +26,13 @@ namespace HotelComplexWPF.Pages
         public AdminPage(User currentUser)
         {
             InitializeComponent();
+
+            string fullNameThisPerson = 
+                $"{currentUser.Employee.DetailedInformationAboutThePerson.Human.Surname} " + 
+                $"{currentUser.Employee.DetailedInformationAboutThePerson.Human.Firstname} " +
+                $"{currentUser.Employee.DetailedInformationAboutThePerson.Patronymic}";
+
+            tblFIO.Text = fullNameThisPerson;
         }
         private void btnAddCountry_Click(object sender, RoutedEventArgs e)
         {
