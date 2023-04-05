@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HotelComplexWPF"
         mc:Ignorable="d"
-        Title="Гостиничный комплекс" Height="720" Width="1280" MinHeight="720" MinWidth="1280" Icon="/Resources/HotelLog.ico">
+        Title="Гостиничный комплекс" Height="760" Width="1280" MinHeight="760" MinWidth="1280" Icon="/Resources/HotelLog.ico" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -13,9 +13,9 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="70"/>
-            <RowDefinition/>
-            <RowDefinition Height="70"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="620*"/>
+            <RowDefinition Height="70*"/>
         </Grid.RowDefinitions>
 
         <Image Source="/Resources/HotelLog.png" Width="50" Height="50" HorizontalAlignment="Left"/>
@@ -25,7 +25,7 @@
         <Grid Background="#2e3a42" Panel.ZIndex="-2" Grid.Row="2" Grid.ColumnSpan="3"/>
 
 
-        <StackPanel Grid.Row="1" Grid.ColumnSpan="3">
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="3" VerticalAlignment="Center">
             <Frame ContentRendered="mainFrame_ContentRendered" x:Name="mainFrame" NavigationUIVisibility="Hidden"/>
         </StackPanel>
         
