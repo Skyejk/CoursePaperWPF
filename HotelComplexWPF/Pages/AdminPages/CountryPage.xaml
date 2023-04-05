@@ -6,9 +6,32 @@
       xmlns:local="clr-namespace:HotelComplexWPF.Pages.AdminPages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="CountryPage">
+      Title="CountryPage" IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="400*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Stretch">
+            <DataGrid x:Name="DGridCountry"
+                      AutoGenerateColumns="False" IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Код страны" Binding="{Binding CodeCountry}" Width="1*"/>
+                    <DataGridTextColumn Header="Страна" Binding="{Binding ShortName}" Width="2*"/>
+                    <DataGridTextColumn Header="Флаг" Binding="{Binding FlagCountry}" Width="1*"/>
+                    <DataGridTextColumn Header="Полное название страны" Binding="{Binding FullName}" Width="3*"/>
+                    <DataGridTemplateColumn Header="Редактировать" Width="Auto">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="btnEdit" Content="Редактировать" Click="btnEdit_Click"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        <Button x:Name="btnAdd" Grid.Row="1" HorizontalAlignment="Left" Content="Добавить" Click="btnAdd_Click"/>
+        <Button x:Name="btnDelete" Grid.Row="1" HorizontalAlignment="Right" Content="Удалить" Click="btnDelete_Click"/>
     </Grid>
 </Page>
