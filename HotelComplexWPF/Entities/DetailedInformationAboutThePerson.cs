@@ -14,6 +14,13 @@ namespace HotelComplexWPF.Entities
     
     public partial class DetailedInformationAboutThePerson
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public DetailedInformationAboutThePerson()
+        {
+            this.Client = new HashSet<Client>();
+            this.Employee = new HashSet<Employee>();
+        }
+    
         public int ID { get; set; }
         public int HumanID { get; set; }
         public string Patronymic { get; set; }
@@ -28,7 +35,11 @@ namespace HotelComplexWPF.Entities
         public string INN { get; set; }
     
         public virtual City City { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Client> Client { get; set; }
         public virtual Gender Gender { get; set; }
         public virtual Human Human { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Employee> Employee { get; set; }
     }
 }
