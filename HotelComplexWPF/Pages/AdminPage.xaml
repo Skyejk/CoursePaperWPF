@@ -10,51 +10,34 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="300"/> 
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="30"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="400"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="tblFIO" Text="Фамилия Имя О." Grid.Column="15" Grid.ColumnSpan="3" VerticalAlignment="Center" TextAlignment="Center"/>
-        <Button x:Name="btnAddCountry"      Grid.Row="2" Grid.ColumnSpan="4" Content="Добавить страну" Click="btnAddCountry_Click"/>
-        <Button x:Name="btnAddRegion"       Grid.Row="3" Grid.ColumnSpan="4" Content="Добавить регион" Click="btnAddRegion_Click"/>
-        <Button x:Name="btnAddCity"         Grid.Row="4" Grid.ColumnSpan="4" Content="Добавить город" Click="btnAddCity_Click"/>
-        <Button x:Name="btnAddHotel"        Grid.Row="5" Grid.ColumnSpan="4" Content="Добавить отель" Click="btnAddHotel_Click"/>
-        <Button x:Name="btnAddHotelRoom"    Grid.Row="6" Grid.ColumnSpan="4" Content="Добавить комнату" Click="btnAddHotelRoom_Click"/>
-        <Button x:Name="btnAddEmployee"     Grid.Row="7" Grid.ColumnSpan="4" Content="Добавить сотрудника" Click="btnAddEmployee_Click"/>
-
-        <Frame x:Name="frmFocus" NavigationUIVisibility="Hidden" Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="13" Grid.RowSpan="7"/>
-
-        <TextBlock 
-            Grid.Column="5" Grid.Row="4" 
-            Grid.ColumnSpan="8" Grid.RowSpan="2"
-            Text="Панель администратора"
+        <TextBlock x:Name="tblFIO" Text="Фамилия Имя О." Grid.Column="2" Grid.Row="0" VerticalAlignment="Bottom" TextAlignment="Center" Margin="10"/>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button x:Name="btnAddCountry"   Content="Добавить страну" Click="btnAddCountry_Click"/>
+            <Button x:Name="btnAddRegion"    Content="Добавить регион" Click="btnAddRegion_Click"/>
+            <Button x:Name="btnAddCity"      Content="Добавить город" Click="btnAddCity_Click"/>
+            <Button x:Name="btnAddHotel"     Content="Добавить отель" Click="btnAddHotel_Click"/>
+            <Button x:Name="btnAddHotelRoom" Content="Добавить комнату" Click="btnAddHotelRoom_Click"/>
+            <Button x:Name="btnAddEmployee"  Content="Добавить сотрудника" Click="btnAddEmployee_Click"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <ScrollViewer Height="500" Width="auto">
+                <Frame x:Name="frmFocus" Grid.Column="1" NavigationUIVisibility="Hidden" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch"/>
+            </ScrollViewer>
+        </StackPanel>
+        <TextBlock
+            Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2"
+            Text="Администратор"
             VerticalAlignment="Center" HorizontalAlignment="Center"
             FontSize="45" Panel.ZIndex="-4"
             />

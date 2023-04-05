@@ -10,14 +10,14 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="650*"/>
+            <ColumnDefinition Width="60*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="290*"/>
+            <RowDefinition Height="850*"/>
+            <RowDefinition Height="290*"/>
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -31,6 +31,5 @@
             <Button x:Name="btnEnter" Content="Войти" Click="btnEnter_Click"/>
             <Button x:Name="btnCancel" Content="Отмена" Click="btnCancel_Click"/>
         </StackPanel>
-        
     </Grid>
 </Page>
