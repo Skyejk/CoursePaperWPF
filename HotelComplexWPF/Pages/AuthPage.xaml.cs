@@ -57,11 +57,15 @@ namespace HotelComplexWPF.Pages
                         }
                     }
                     else {
-
-                        if (userCount > 0 && tblCaptcha.Text == tbxCaptcha.Text) {
-                            Successfully(user.Employee.EmployeePosition.Post.ToString());
-                            //вход
-                            LoadF(user.Employee.EmployeePosition.Post.ToString(), user);
+                        if(tbxCaptcha.Text == tblCaptcha.Text) {
+                            if (userCount > 0)
+                            {
+                                Successfully(user.Employee.EmployeePosition.Post.ToString());
+                                //вход
+                                LoadF(user.Employee.EmployeePosition.Post.ToString(), user);
+                            }else{
+                                NotF("Пользователя с таким паролем не существует.");
+                            }
                         }
                         else {
                             NotF("Введите Captcha.");
@@ -92,9 +96,11 @@ namespace HotelComplexWPF.Pages
             tblCaptcha.TextDecorations = TextDecorations.Strikethrough;
         }
         void MarkValid() {
-            tbxUserPassword.Background = default;
+            var bc = new BrushConverter();
+
+            tbxUserPassword.Background = (Brush)bc.ConvertFrom("#293238");
             tbxUserPassword.ToolTip = null;
-            tbxUserName.Background = default;
+            tbxUserName.Background = (Brush)bc.ConvertFrom("#293238");
             tbxUserName.ToolTip = null;
         }
         void MarkInvalid(Control control, string txt) {
@@ -104,7 +110,7 @@ namespace HotelComplexWPF.Pages
         void СheckingForDataAvailability() {
             if (tbxUserName.Text == "")
                 MarkInvalid(tbxUserName, "Введите логин.");
-            else if (tbxUserPassword.Password == "")
+            if (tbxUserPassword.Password == "")
                 MarkInvalid(tbxUserPassword, "Введите пароль.");
         }
         void NotF(string text) {
