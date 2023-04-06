@@ -121,6 +121,9 @@ namespace HotelComplexWPF.Pages
                 case "Registrar":
                     NavigationService.Navigate(new RegistrarPage(user));
                     break;
+                default:
+                    MessageBox.Show("Данный раздел находится в разработке. Ожидайте следующих версий.");
+                    break;
             }
             tbxUserName.Text = "";
             tbxUserPassword.Password = "";
