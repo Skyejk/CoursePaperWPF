@@ -116,6 +116,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\RegistrarPages\AddClient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RegistrarPages\AddReservation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Styles\ComboBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -240,6 +248,12 @@
     </Compile>
     <Compile Include="Pages\RegistrarPage.xaml.cs">
       <DependentUpon>RegistrarPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RegistrarPages\AddClient.xaml.cs">
+      <DependentUpon>AddClient.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RegistrarPages\AddReservation.xaml.cs">
+      <DependentUpon>AddReservation.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
