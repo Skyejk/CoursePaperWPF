@@ -21,12 +21,12 @@ namespace HotelComplexWPF.Entities
         }
     
         public int ID { get; set; }
-        public int HumanID { get; set; }
+        public int DetailedInformationAboutThePersonID { get; set; }
         public byte Blacklist { get; set; }
         public string Survey { get; set; }
         public string DescriptionNotes { get; set; }
     
-        public virtual Human Human { get; set; }
+        public virtual DetailedInformationAboutThePerson DetailedInformationAboutThePerson { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ReservationHotelRoom> ReservationHotelRoom { get; set; }
     }

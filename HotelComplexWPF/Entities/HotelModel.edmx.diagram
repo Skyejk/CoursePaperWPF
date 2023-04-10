@@ -4,43 +4,43 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="d4d148ca7f3e439fb77188efcc9d0a89" Name="Diagram1">
-        <EntityTypeShape EntityType="HotelModel.CategoryHotelRoom" Width="1.5" PointX="10.5" PointY="8.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.City" Width="1.5" PointX="5.25" PointY="6.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.Client" Width="1.5" PointX="12.75" PointY="7.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.Country" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.DetailedInformationAboutThePerson" Width="1.5" PointX="7.5" PointY="5.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.Education" Width="1.5" PointX="7.5" PointY="15.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.Employee" Width="1.5" PointX="9.75" PointY="10.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.EmployeePosition" Width="1.5" PointX="7.5" PointY="17.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.Gender" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.Hotel" Width="1.5" PointX="7.5" PointY="11" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.HotelRoom" Width="1.5" PointX="12.75" PointY="10.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.Human" Width="1.5" PointX="5.25" PointY="9.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.Region" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.ReservationHotelRoom" Width="1.5" PointX="15" PointY="11.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.StatusHotelRoom" Width="1.5" PointX="10.5" PointY="5.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.TypeHotelRoom" Width="1.5" PointX="10.5" PointY="19" IsExpanded="true" />
-        <EntityTypeShape EntityType="HotelModel.User" Width="1.5" PointX="12" PointY="15.375" IsExpanded="true" />
-        <AssociationConnector Association="HotelModel.FK__HotelRoom__Categ__25918339" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK__City__RegionID__192BAC54" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK__DetailedI__CityA__300F11AC" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK__Hotel__CityID__1C0818FF" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK__Client__HumanID__422DC1E7" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK__Reservati__Clien__45FE52CB" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK__Region__CountryI__164F3FA9" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK__DetailedI__Gende__2F1AED73" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK__DetailedI__Human__2E26C93A" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK__Employee__Educat__3A8CA01F" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK__Employee__HotelI__3B80C458" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK__Employee__HumanI__38A457AD" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK__Employee__RoleID__39987BE6" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK__User__EmployeeID__3F51553C" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK__HotelRoom__Hotel__249D5F00" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK__HotelRoom__Statu__2779CBAB" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK__HotelRoom__TypeI__2685A772" ManuallyRouted="false" />
-        <AssociationConnector Association="HotelModel.FK__Reservati__Hotel__450A2E92" ManuallyRouted="false" />
+      <Diagram DiagramId="700ec99706b04d958a53556c3dab6df8" Name="Diagram1">
+        <EntityTypeShape EntityType="SlivkovModel.CategoryHotelRoom" Width="1.5" PointX="7.5" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SlivkovModel.City" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="SlivkovModel.Client" Width="1.5" PointX="9.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="SlivkovModel.Country" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SlivkovModel.DetailedInformationAboutThePerson" Width="1.5" PointX="7.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SlivkovModel.Education" Width="1.5" PointX="10.5" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SlivkovModel.Employee" Width="1.5" PointX="12.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SlivkovModel.EmployeePosition" Width="1.5" PointX="10.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SlivkovModel.Gender" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SlivkovModel.Hotel" Width="1.5" PointX="7.5" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SlivkovModel.HotelRoom" Width="1.5" PointX="9.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SlivkovModel.Human" Width="1.5" PointX="5.25" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SlivkovModel.Region" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="SlivkovModel.ReservationHotelRoom" Width="1.5" PointX="12" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SlivkovModel.StatusHotelRoom" Width="1.5" PointX="7.5" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SlivkovModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SlivkovModel.TypeHotelRoom" Width="1.5" PointX="7.5" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SlivkovModel.User" Width="1.5" PointX="15" PointY="4.375" IsExpanded="true" />
+        <AssociationConnector Association="SlivkovModel.FK__HotelRoom__Categ__666B225D" ManuallyRouted="false" />
+        <AssociationConnector Association="SlivkovModel.FK__City__RegionID__5A054B78" ManuallyRouted="false" />
+        <AssociationConnector Association="SlivkovModel.FK__DetailedI__CityA__70E8B0D0" ManuallyRouted="false" />
+        <AssociationConnector Association="SlivkovModel.FK__Hotel__CityID__5CE1B823" ManuallyRouted="false" />
+        <AssociationConnector Association="SlivkovModel.FK__Client__Detailed__0307610B" ManuallyRouted="false" />
+        <AssociationConnector Association="SlivkovModel.FK__Reservati__Clien__06D7F1EF" ManuallyRouted="false" />
+        <AssociationConnector Association="SlivkovModel.FK__Region__CountryI__5728DECD" ManuallyRouted="false" />
+        <AssociationConnector Association="SlivkovModel.FK__DetailedI__Gende__6FF48C97" ManuallyRouted="false" />
+        <AssociationConnector Association="SlivkovModel.FK__DetailedI__Human__6F00685E" ManuallyRouted="false" />
+        <AssociationConnector Association="SlivkovModel.FK__Employee__Detail__797DF6D1" ManuallyRouted="false" />
+        <AssociationConnector Association="SlivkovModel.FK__Employee__Educat__7B663F43" ManuallyRouted="false" />
+        <AssociationConnector Association="SlivkovModel.FK__Employee__HotelI__7C5A637C" ManuallyRouted="false" />
+        <AssociationConnector Association="SlivkovModel.FK__Employee__RoleID__7A721B0A" ManuallyRouted="false" />
+        <AssociationConnector Association="SlivkovModel.FK__User__EmployeeID__002AF460" ManuallyRouted="false" />
+        <AssociationConnector Association="SlivkovModel.FK__HotelRoom__Hotel__6576FE24" ManuallyRouted="false" />
+        <AssociationConnector Association="SlivkovModel.FK__HotelRoom__Statu__68536ACF" ManuallyRouted="false" />
+        <AssociationConnector Association="SlivkovModel.FK__HotelRoom__TypeI__675F4696" ManuallyRouted="false" />
+        <AssociationConnector Association="SlivkovModel.FK__Reservati__Hotel__05E3CDB6" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

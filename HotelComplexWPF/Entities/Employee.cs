@@ -21,7 +21,7 @@ namespace HotelComplexWPF.Entities
         }
     
         public int ID { get; set; }
-        public int HumanID { get; set; }
+        public int DetailedInformationAboutThePersonID { get; set; }
         public int RoleID { get; set; }
         public int EducationID { get; set; }
         public int HotelID { get; set; }
@@ -29,9 +29,9 @@ namespace HotelComplexWPF.Entities
         public string PhoneNumber { get; set; }
         public decimal SalaryAmount { get; set; }
     
+        public virtual DetailedInformationAboutThePerson DetailedInformationAboutThePerson { get; set; }
         public virtual Education Education { get; set; }
         public virtual Hotel Hotel { get; set; }
-        public virtual Human Human { get; set; }
         public virtual EmployeePosition EmployeePosition { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<User> User { get; set; }

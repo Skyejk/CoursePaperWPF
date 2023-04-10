@@ -95,7 +95,10 @@
         </Style>-->
     <Style TargetType="TextBlock">
         <Setter Property="Foreground" Value="#f0f2f3"/>
-        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="Width" Value="200"/>
         <Setter Property="FontFamily" Value="Comic Sans MS"/>
     </Style>
 
@@ -130,5 +133,18 @@
         <Setter Property="HorizontalOffset" Value="15"/>
         <Setter Property="VerticalOffset" Value="10"/>
         <Setter Property="Opacity" Value="0.7"/>
+    </Style>
+
+    <Style TargetType="DatePicker">
+        <Setter Property="Background" Value="#293238"/>
+        <Setter Property="BorderBrush" Value="#293238"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Width" Value="300"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="#f0f2f3"/>
+        <Setter Property="BorderThickness" Value="0"/>
     </Style>
 </ResourceDictionary>

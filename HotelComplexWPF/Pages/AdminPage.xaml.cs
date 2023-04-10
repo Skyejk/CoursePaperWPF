@@ -26,6 +26,13 @@ namespace HotelComplexWPF.Pages
         public AdminPage(User currentUser)
         {
             InitializeComponent();
+
+            string fullNameThisPerson = 
+                $"{currentUser.Employee.DetailedInformationAboutThePerson.Human.Surname} " + 
+                $"{currentUser.Employee.DetailedInformationAboutThePerson.Human.Firstname} " +
+                $"{currentUser.Employee.DetailedInformationAboutThePerson.Patronymic}";
+
+            tblFIO.Text = fullNameThisPerson;
         }
         private void btnAddCountry_Click(object sender, RoutedEventArgs e)
         {
@@ -44,17 +51,25 @@ namespace HotelComplexWPF.Pages
 
         private void btnAddHotel_Click(object sender, RoutedEventArgs e)
         {
-            frmFocus.NavigationService.Navigate(new HotelPage());
+            //frmFocus.NavigationService.Navigate(new HotelPage());
+            NotF("Данный раздел находится в разработке");
         }
 
         private void btnAddHotelRoom_Click(object sender, RoutedEventArgs e)
         {
-            frmFocus.NavigationService.Navigate(new HRoomPage());
+            NotF("Данный раздел находится в разработке");
+            //frmFocus.NavigationService.Navigate(new HRoomPage());
         }
 
         private void btnAddEmployee_Click(object sender, RoutedEventArgs e)
         {
-            frmFocus.NavigationService.Navigate(new EmployeePage());
+            NotF("Данный раздел находится в разработке");
+            //frmFocus.NavigationService.Navigate(new EmployeePage());
+        }
+
+        void NotF(string text)
+        {
+            MessageBox.Show(text, null, MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.OK, MessageBoxOptions.None);
         }
     }
 }

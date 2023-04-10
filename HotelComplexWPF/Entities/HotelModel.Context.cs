@@ -20,12 +20,12 @@ namespace HotelComplexWPF.Entities
             : base("name=HotelEntities")
         {
         }
-        public static HotelEntities GetContext() { 
+        public static HotelEntities GetContext() {
             if(context == null)
                 context = new HotelEntities();
             return context;
         }
-    
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

@@ -1,0 +1,86 @@
+﻿<Page x:Class="HotelComplexWPF.Pages.RegistrarPages.AddReservation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HotelComplexWPF.Pages.RegistrarPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="AddReservation">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250*"/>
+            <ColumnDefinition Width="550*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+
+        <TextBlock Text="Комната"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   Grid.Column="0" Grid.Row="0"/>
+
+        <ComboBox x:Name="cmbxHotelRoom"
+                  SelectedItem="{Binding ReservationHotelRoom}"
+                  Grid.Column="1" Grid.Row="0"
+                  HorizontalAlignment="Left" Width="300" TabIndex="1"
+                  Height="30" Margin="10"
+                  DisplayMemberPath="HotelRoomID"/>
+
+        <TextBlock Text="Клиент"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   Grid.Column="0" Grid.Row="1"/>
+        
+        <StackPanel Grid.Column="1" Grid.Row="1"
+                      HorizontalAlignment="Left"
+                    Orientation="Horizontal">
+            <ComboBox x:Name="cmbxClient"
+                      SelectedItem="{Binding Human}"
+                       Width="300" TabIndex="2"
+                      Height="30" Margin="10,10,30,10"
+                      DisplayMemberPath="Surname"/>
+
+            <Button x:Name="btnAddClient" TabIndex="2"
+                    Content="Добавить клиента"
+                    Height="30" Margin="10"
+                    Click="btnAddClient_Click"/>
+        </StackPanel>
+
+        <TextBlock Text="Дата заселения"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   Grid.Column="0" Grid.Row="2"/>
+
+        <DatePicker x:Name="datePicStart"
+                    Grid.Column="1" Grid.Row="2"
+                    HorizontalAlignment="Left" TabIndex="3" FirstDayOfWeek="Monday"/>
+
+        <TextBlock Text="Дата выселения"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   Grid.Column="0" Grid.Row="3"/>
+
+        <DatePicker x:Name="datePicEnd"
+                    Grid.Column="1" Grid.Row="3"
+                    HorizontalAlignment="Left" TabIndex="3" FirstDayOfWeek="Monday"/>
+
+        <TextBlock Text="Замечания"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   Grid.Column="0" Grid.Row="4"/>
+
+        <TextBox x:Name="tbxDescriptionNotes"
+                 Text="{Binding DescriptionNotes}"
+                 Grid.Column="1" Grid.Row="4"
+                 HorizontalAlignment="Left" Width="300" TabIndex="3"/>
+
+        <Button x:Name="btnSave" Content="Сохранить"
+                Grid.Column="0" Grid.Row="5"
+                Grid.ColumnSpan="2" TabIndex="6"
+                Click="btnSave_Click"/>
+    </Grid>
+</Page>

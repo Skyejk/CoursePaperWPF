@@ -10,16 +10,16 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="300"/> 
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="300"/>
-            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="300*"/> 
+            <ColumnDefinition Width="700*"/>
+            <ColumnDefinition Width="300*"/>
+            <ColumnDefinition Width="30*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="150"/>
-            <RowDefinition Height="400"/>
-            <RowDefinition Height="150"/>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="150*"/>
+            <RowDefinition Height="400*"/>
+            <RowDefinition Height="150*"/>
+            <RowDefinition Height="30*"/>
         </Grid.RowDefinitions>
         <TextBlock x:Name="tblFIO" Text="Фамилия Имя О." Grid.Column="2" Grid.Row="0" VerticalAlignment="Bottom" TextAlignment="Center" Margin="10"/>
         <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">

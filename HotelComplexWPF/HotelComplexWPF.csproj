@@ -76,6 +76,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\AdminPages\AddEditPages\AddEditCountryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminPages\AddEditPages\AddEditRegionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AdminPages\CityPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -101,6 +109,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\AuthPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RegistrarPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RegistrarPages\AddClient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RegistrarPages\AddReservation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -199,6 +219,12 @@
     <Compile Include="Pages\AdminPages\AddEditPages\AddEditCityPage.xaml.cs">
       <DependentUpon>AddEditCityPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AdminPages\AddEditPages\AddEditCountryPage.xaml.cs">
+      <DependentUpon>AddEditCountryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\AddEditPages\AddEditRegionPage.xaml.cs">
+      <DependentUpon>AddEditRegionPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AdminPages\CityPage.xaml.cs">
       <DependentUpon>CityPage.xaml</DependentUpon>
     </Compile>
@@ -219,6 +245,15 @@
     </Compile>
     <Compile Include="Pages\AuthPage.xaml.cs">
       <DependentUpon>AuthPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RegistrarPage.xaml.cs">
+      <DependentUpon>RegistrarPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RegistrarPages\AddClient.xaml.cs">
+      <DependentUpon>AddClient.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RegistrarPages\AddReservation.xaml.cs">
+      <DependentUpon>AddReservation.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -259,7 +294,18 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Entities\HotelModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HotelModel.edmx</DependentUpon>
+      <LastGenOutput>HotelModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entities\HotelModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HotelModel.edmx</DependentUpon>
+      <LastGenOutput>HotelModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\HotelLog.png" />
   </ItemGroup>
@@ -267,16 +313,6 @@
     <Resource Include="Resources\HotelLog.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Entities\HotelModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>HotelModel.Context.cs</LastGenOutput>
-      <DependentUpon>HotelModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="Entities\HotelModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>HotelModel.edmx</DependentUpon>
-      <LastGenOutput>HotelModel.cs</LastGenOutput>
-    </Content>
     <Resource Include="Resources\pngQuestion.png" />
   </ItemGroup>
   <ItemGroup>
